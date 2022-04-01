@@ -24,3 +24,23 @@ file_list = filestation.list('/Multimedia')
 search_results = filestation.search('/Multimedia/Sample/picture', 'sample')
 file_contents = filestation.download('/Multimedia/Sample/picture/sample001.jpg')
 ```
+
+```
+(venv) qnap on master ≡
+➜ python ./main.py -h
+usage: main.py [-h] [-o] [-f] host user pwd upload target
+
+Upload file/folder to QNAP QTS NAS.
+
+positional arguments:
+  host             URL or IP to the QNAP QTS NAS server.
+  user             Username
+  pwd              Password
+  upload           The file or folder to be uploaded.
+  target           The target directory on the NAS.
+
+optional arguments:
+  -h, --help       show this help message and exit
+  -o, --overwrite  Whether overwrite the same name file/folder on the NAS.
+  -f, --fullpath   Whether create the full path of the uploaded file on the NAS.
+```
