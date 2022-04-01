@@ -91,6 +91,19 @@ class FileStation(Qnap):
             }
         ))
 
+    def create_folder(self, path, name):
+        """
+        Create folder.
+        """
+        return self.req_post(self.endpoint(
+            func='createdir'
+            ),
+            data={
+                'dest_path': path,
+                'dest_folder': name,
+            }
+        )
+
     def upload(self, path, data, overwrite=True):
         """
         Upload file.

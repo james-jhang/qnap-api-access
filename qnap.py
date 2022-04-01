@@ -71,10 +71,12 @@ class Qnap():
         self.get_response_data(r)
         return None
 
-    def req_post(self, endpoint, files):
+    def req_post(self, endpoint, **kwargs):
         logging.info('url: ' + endpoint)
         try:
-            r = requests.post(endpoint, files=files)
+            # print(endpoint)
+            # print(kwargs)
+            r = requests.post(endpoint, **kwargs)
         except:
             logging.error('POST error: ' + endpoint)
             return None
