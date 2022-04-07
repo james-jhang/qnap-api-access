@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from filestation import FileStation
+from .filestation import FileStation
 
 
 def concat_path(*paths):

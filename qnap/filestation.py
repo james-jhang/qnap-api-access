@@ -1,6 +1,6 @@
 import os
 
-from qnap import Qnap
+from .qnap import Qnap
 
 class FileStation(Qnap):
     """

@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="qnap",
-    version="0.0.1.dev2",
+    version="0.0.1.dev6",
     author="e8315402",
     author_email="e8315402@gmail.com",
     description="Access to QNAP NAS by Python",
@@ -16,6 +16,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(),
     python_requires=">=3.6",
 )

@@ -4,8 +4,8 @@ import re
 import requests
 import xml.etree.ElementTree as ET
 
-from get_sid import ezEncode
-from utils import jsonprint
+from .get_sid import ezEncode
+from .utils import jsonprint
 
 class Qnap():
     def __init__(self, host, user, passwd, port='8080'):
